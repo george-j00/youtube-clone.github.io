@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/Youtube Clone/assets/_images/youtube-favicon.ico">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="assets/_style/reset.css">
+    <link rel="stylesheet" href="assets/_style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css"
+  />
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="container-fluid bg-white py-lg-1 py-md-0 py-sm-2 py-2 ">
+
+        <div class="d-flex flex-wrap align-items-center justify-content-md-between ps-3 p-1">
+            <!-- youtube log container -->
+            <div class="col d-flex align-items-center col-md-auto">
+                <div class="menu-icon">
+                    
+                    <img src="assets/_images/svg/menu.svg" id="menu" alt="" class="icon">
+                </div>
+                <img src="assets/_images/youtube.png" width="100" class="ms-4" alt="">
+            </div>
+
+            <!-- search container-->
+            <div class="col col-md-6 col-lg-5 d-none d-md-flex align-items-center justify-content-center">
+                <div class="input-group input-search flex-nowrap col-10">
+                    <input type="text" class="form-control rounded-start-5" placeholder="Search">
+                    <button class="input-group-text rounded-end-5">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="d-flex align-items-center ms-2 mic-icon p-2">
+                        <img src="assets/_images/svg/mic.svg" alt="" class="icon">
+                    </div>
+                </div>
+            </div>
+
+            <!-- top right icons  -->
+             <div>
+            <ul class="navbar-nav me-auto gap-4 d-flex flex-row">
+              <li>
+                <a class="nav-link" aria-current="page" href="#">
+                  <i class="ri-video-add-line" style="font-size: 24px"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">
+                  <i class="ri-notification-4-line" style="font-size: 24px"></i>
+                </a>
+              </li>
+              <li class="me-2">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                  <img
+                    class="rounded-circle"
+                    style="height: 34px; width: 34px"
+                    src="https://yt3.ggpht.com/yti/AHyvSCDDeWKxNt7KT2s0WxHZATENiYi21DupgiHfvKa7fw=s88-c-k-c0x00ffffff-no-rj-mo"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark selected ">
+                    <img class="icon" src="assets/_images/svg/home.svg" alt="">
+                    <span class="fw-bold">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <img src="assets/_images/svg/shorts.svg" alt="" class="icon">
+                    <span>Shorts</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <img src="assets/_images/svg/subscriptions.svg" alt="" class="icon">
+                    <span>Subscriptions</span>
+                </a>
+            </li>
+            <hr>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <img src="assets/_images/svg/video_library.svg" alt="" class="icon">
+                    <span>Library</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <img src="assets/_images/svg/history.svg" alt="" class="icon">
+                    <span>History</span>
+                </a>
+            </li>
+            <hr>
+            
+            <div class="explore">
+                <h6>Explore</h6>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+
+                        <img src="assets/_images/svg/trend.svg" alt="" class="icon">
+                        <span>Trending</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/svg/music.svg" alt="" class="icon">
+                        <span>Music</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/svg/live.svg" alt="" class="icon">
+                        <span>Live</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/svg/gaming.svg" alt="" class="icon">
+                        <span>Gaming</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/svg/news.svg" alt="" class="icon">
+                        <span>News</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/svg/sports.svg" alt="" class="icon">
+                        <span>Sports</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/svg/learning.svg" alt="" class="icon">
+                        <span>Learning</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/svg/fashion.svg" alt="" class="icon">
+                        <span>Fashion& Beauty</span>
+                    </a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/svg/add_circle.svg" alt="" class="icon">
+                        <span>Browse channels</span>
+                    </a>
+                </li>
+            </div>
+
+            <hr>
+            <div class="more">
+                <h6>More from YouTube</h6>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/premium.png" alt="" class="icon">
+                        <span>YouTube Premium</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/music.png" alt="" class="icon">
+                        <span>Youtube Music</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/youtube-kids.png" alt="" class="icon">
+                        <span>Youtube Kids</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        <img src="assets/_images/youtube-tv.png" alt="" class="icon">
+                        <span>Youtube Tv</span>
+                    </a>
+                </li>
+            </div>
+
+            <hr>
+
+
+
+        </ul>
+    </div>
+
+
+    <!-- main-content -->
+    <div class="page-content">
+        <div class="carousels">
+            <div class="carousel-container d-flex align-items-center me-1">
+                <div class="category-item category-item-active">All</div>
+                <div class="category-item">Live</div>
+                <div class="category-item">Music</div>
+                <div class="category-item">Christmans carol</div>
+                <div class="category-item">Jazz</div>
+                <div class="category-item">Gaming</div>
+                <div class="category-item">Sketch comedy</div>
+                <div class="category-item">Chess</div>
+                <div class="category-item">Classical Music</div>
+                <div class="category-item">History</div>
+                <div class="category-item">News</div>
+                <div class="category-item">Game shows</div>
+                <div class="category-item">Eating</div>
+                <div class="category-item">Humans</div>
+                <div class="category-item">Sports leagues</div>
+                <div class="category-item">History</div>
+                <div class="category-item">News</div>
+                <div class="category-item">Game shows</div>
+                <div class="category-item">Eating</div>
+                <div class="category-item">Humans</div>
+                <div class="category-item">Sports leagues</div>
+            </div>
+        </div>
+
+        <!-- main page section  -->
+        <div class="video-container container p-5 py-4">
+            <div class="d-flex" style="flex-wrap: wrap; gap: 10px;">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 gap-5" >
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/lA0XBrv8aR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/JKtfzzqj3G4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/IiIgm_yaoOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/mPF9f-PLDPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-4">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/-fW2X7fh7Yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <!-- <iframe width="360" height="215" src="https://www.youtube.com/embed/lA0XBrv8aR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/jqVm5_G1ZEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+        <div class="shorts-container container-fluid px-5 py-2">
+            <div class="shorts-header pb-3">
+                <img src="assets/_images/youtube-shorts.png " alt="" class="icon">
+                <span>Shorts</span>
+            </div>
+
+            <div class="container">
+                <div class="row ">
+                    <div class="col-sm-6 col-md-3">
+                        <iframe width="200" height="400" src="https://www.youtube.com/embed/7MDsEfHTFAk" title="Our minds during date night. 😁😂 #couple #funny #dinner #date #reels #shorts #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <iframe width="200" height="400" src="https://www.youtube.com/embed/7MDsEfHTFAk" title="Our minds during date night. 😁😂 #couple #funny #dinner #date #reels #shorts #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <iframe width="200" height="400"  src="https://www.youtube.com/embed/7MDsEfHTFAk" title="Our minds during date night. 😁😂 #couple #funny #dinner #date #reels #shorts #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <iframe width="200" height="400"  src="https://www.youtube.com/embed/7MDsEfHTFAk" title="Our minds during date night. 😁😂 #couple #funny #dinner #date #reels #shorts #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <
+                <div class="arrow">
+                    <i class="fa-solid fa-chevron-down d-flex justify-content-center" id="down"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <!-- slick for carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assets/_script/script.js"></script>
+</body>
+
+</html>
